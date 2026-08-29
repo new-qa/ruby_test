@@ -10,24 +10,35 @@ GEM
     aws-sdk-resources (2.0.48)
       aws-sdk-core (= 2.0.48)
     builder (3.2.4)
+    date (3.5.1)
+    erb (6.0.7)
     jmespath (1.4.0)
     json (1.8.6)
     macaddr (1.7.2)
       systemu (~> 2.6.5)
     multi_json (1.14.1)
-    rdoc (3.12.2)
-      json (~> 1.4)
+    psych (5.5.0)
+      date
+      stringio
+    rdoc (6.17.0)
+      erb
+      psych (>= 4.0.0)
+      tsort
+    stringio (3.2.0)
     systemu (2.6.5)
+    tsort (0.2.0)
     uuid (2.3.9)
       macaddr (~> 1.0)
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk (~> 2.0.22)
   json (~> 1.8.1)
-  rdoc (~> 3.12)
+  rdoc (~> 6.0)
   uuid (~> 2.3.7)
+
 BUNDLED WITH
    2.3.5
